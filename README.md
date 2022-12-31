@@ -6,10 +6,9 @@ The purpose of this project is to have a continuous stream of tweets filtered by
 For this, we'll use kafka, elasticsearch and kibana. 
 
 We made a system that follows this architecture : 
-![architecture of project](/pics/architecture.png "Schema of the architecture").
+![architecture of project](/pics/architecture.png "Schema of the architecture")
 
 ## **Kafka**
-***
 
 ### ***Installation***
 
@@ -87,7 +86,6 @@ If you want to visualize raw tweets directly in the terminal, you can run the co
     python3 kafka_consumer.py
 ````
 ## **Streaming**
-***
 
 ### **ELasticSearch**
 
@@ -127,7 +125,8 @@ You are now ready to start ElasticSearch by going into you're ealsticsearch bin 
 ````
 
 If you go to (http://localhost:9200) , you should see something like that : 
-![Screenshot of localhost 92000 ElasticSearch](/pics/elasticsearch.png "Screenshot of localhost 92000 ElasticSearch").
+![Screenshot of localhost 92000 ElasticSearch](/pics/elasticsearch.png "Screenshot of localhost 92000 ElasticSearch"
+
 
 ### **Consumer**
 
@@ -159,7 +158,6 @@ To start the consumer you'll only need to start the code :
 ````
 
 ## **Visualize**
-***
 
 ### **Kibana**
 Finally, we wanted to add one last feature to visualize the tendancies of the sentiment regarding our filter. For this, we used Kibana.
@@ -206,13 +204,13 @@ If you go to (http://localhost:5601) , you should be able to navigate through Ki
 Once in Kibana, create a new index pattern (http://localhost:5601/app/management/kibana/indexPatterns/create)
 
 You should see an index named *tweet_biden*, then click on create pattern.
-![Screenshot of index pattern creation](/pics/visualization.png "Screenshot of index pattern creation").
+![Screenshot of index pattern creation](/pics/indexCreating.png "Screenshot of index pattern creation")
 
 Now if you go under the visualization menu you should be able to create a new visualization. Here we chose Lens.
-![Screenshot of visualization menu](/pics/visualization.png "Screenshot of visualization menu").
+![Screenshot of visualization menu](/pics/visualization.png "Screenshot of visualization menu")
 
 Finally, if you drag and drop the sentiment keyword and choose the donuts representation you should obtain something similar to that : 
-![Donut visualization](/pics/donut1.png).
+![Donut visualization](/pics/donut1.png)
 
 And if you wait a few seconds/ minuts and refresh, the value will change because they take into account new data.
 ![Donut visualization](/pics/donut2.png)
