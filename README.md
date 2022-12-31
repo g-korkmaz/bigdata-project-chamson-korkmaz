@@ -6,7 +6,7 @@ The purpose of this project is to have a continuous stream of tweets filtered by
 For this, we'll use kafka, elasticsearch and kibana. 
 
 We made a system that follows this architecture : 
-![architecture of project](/pics/architecture.png "Schema of the architecture").
+![architecture of project](/pics/architecture.png "Schema of the architecture")
 
 ## **Kafka**
 
@@ -125,7 +125,8 @@ You are now ready to start ElasticSearch by going into you're ealsticsearch bin 
 ````
 
 If you go to (http://localhost:9200) , you should see something like that : 
-![Screenshot of localhost 92000 ElasticSearch](/pics/elasticsearch.png "Screenshot of localhost 92000 ElasticSearch").
+![Screenshot of localhost 92000 ElasticSearch](/pics/elasticsearch.png "Screenshot of localhost 92000 ElasticSearch"
+
 
 ### **Consumer**
 
@@ -203,13 +204,13 @@ If you go to (http://localhost:5601) , you should be able to navigate through Ki
 Once in Kibana, create a new index pattern (http://localhost:5601/app/management/kibana/indexPatterns/create)
 
 You should see an index named *tweet_biden*, then click on create pattern.
-![Screenshot of index pattern creation](/pics/indexCreating.png "Screenshot of index pattern creation").
+![Screenshot of index pattern creation](/pics/indexCreating.png "Screenshot of index pattern creation")
 
 Now if you go under the visualization menu you should be able to create a new visualization. Here we chose Lens.
-![Screenshot of visualization menu](/pics/visualization.png "Screenshot of visualization menu").
+![Screenshot of visualization menu](/pics/visualization.png "Screenshot of visualization menu")
 
 Finally, if you drag and drop the sentiment keyword and choose the donuts representation you should obtain something similar to that : 
-![Donut visualization](/pics/donut1.png).
+![Donut visualization](/pics/donut1.png)
 
 And if you wait a few seconds/ minuts and refresh, the value will change because they take into account new data.
 ![Donut visualization](/pics/donut2.png)
