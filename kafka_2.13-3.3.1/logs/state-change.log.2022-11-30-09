@@ -1,0 +1,8 @@
+[2022-11-30 09:53:19,227] INFO [Controller id=0 epoch=2] Sending UpdateMetadata request to brokers HashSet(0) for 0 partitions (state.change.logger)
+[2022-11-30 09:53:19,248] INFO [Controller id=0 epoch=2] Sending LeaderAndIsr request to broker 0 with 1 become-leader and 0 become-follower partitions (state.change.logger)
+[2022-11-30 09:53:19,250] INFO [Controller id=0 epoch=2] Sending UpdateMetadata request to brokers HashSet(0) for 1 partitions (state.change.logger)
+[2022-11-30 09:53:19,305] INFO [Broker id=0] Handling LeaderAndIsr request correlationId 1 from controller 0 for 1 partitions (state.change.logger)
+[2022-11-30 09:53:19,329] INFO [Broker id=0] Stopped fetchers as part of LeaderAndIsr request correlationId 1 from controller 0 epoch 2 as part of the become-leader transition for 1 partitions (state.change.logger)
+[2022-11-30 09:53:19,340] INFO [Broker id=0] Leader twitter-0 with topic id Some(VDVy4RuFS0OfF5s1-FJBKQ) starts at leader epoch 0 from offset 81681 with partition epoch 0, high watermark 81681, ISR [0], adding replicas [] and removing replicas []. Previous leader epoch was -1. (state.change.logger)
+[2022-11-30 09:53:19,350] INFO [Broker id=0] Finished LeaderAndIsr request in 46ms correlationId 1 from controller 0 for 1 partitions (state.change.logger)
+[2022-11-30 09:53:19,378] INFO [Broker id=0] Add 1 partitions and deleted 0 partitions from metadata cache in response to UpdateMetadata request sent by controller 0 epoch 2 with correlation id 2 (state.change.logger)

@@ -6,7 +6,7 @@ bearerToken = "AAAAAAAAAAAAAAAAAAAAAOhKjQEAAAAAEbWsHojF8OCltDxEIDNtHYFnxu8%3Dd7Q
 
 
 producer = KafkaProducer(bootstrap_servers='localhost:9092')
-search_term = 'Bitcoin'
+search_term = 'Biden'
 topic_name = 'twitter'
 
 class TweetListener(tweepy.StreamingClient):
