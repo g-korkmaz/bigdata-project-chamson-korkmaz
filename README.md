@@ -1,4 +1,4 @@
-# **Bid Data project**
+# **Big Data project**
 
 ## **Introduction**
 
