@@ -9,7 +9,6 @@ We made a system that follows this architecture :
 ![architecture of project](/pics/architecture.png "Schema of the architecture").
 
 ## **Kafka**
-***
 
 ### ***Installation***
 
@@ -87,7 +86,6 @@ If you want to visualize raw tweets directly in the terminal, you can run the co
     python3 kafka_consumer.py
 ````
 ## **Streaming**
-***
 
 ### **ELasticSearch**
 
@@ -159,7 +157,6 @@ To start the consumer you'll only need to start the code :
 ````
 
 ## **Visualize**
-***
 
 ### **Kibana**
 Finally, we wanted to add one last feature to visualize the tendancies of the sentiment regarding our filter. For this, we used Kibana.
@@ -206,7 +203,7 @@ If you go to (http://localhost:5601) , you should be able to navigate through Ki
 Once in Kibana, create a new index pattern (http://localhost:5601/app/management/kibana/indexPatterns/create)
 
 You should see an index named *tweet_biden*, then click on create pattern.
-![Screenshot of index pattern creation](/pics/visualization.png "Screenshot of index pattern creation").
+![Screenshot of index pattern creation](/pics/indexCreating.png "Screenshot of index pattern creation").
 
 Now if you go under the visualization menu you should be able to create a new visualization. Here we chose Lens.
 ![Screenshot of visualization menu](/pics/visualization.png "Screenshot of visualization menu").
